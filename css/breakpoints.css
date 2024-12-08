@@ -1,0 +1,185 @@
+/* Breakpoints Document *********************************************************************************************************************/
+
+/* ?Desktops (up to 1199px) *************************************************************************************/
+@media only screen and (max-width: 1199px) {
+  /* Mountains */
+  .mountain1 {
+    top: 40%;
+    left: -15%;
+    width: 300px;
+    height: 500px;
+  }
+
+  .mountain2 {
+    top: 55%;
+    left: 7%;
+    width: 200px;
+    height: 300px;
+  }
+
+  .mountain3 {
+    top: 65%;
+    left: -5%;
+    width: 300px;
+    height: 200px;
+  }
+
+  /* Landscape Section */
+  .ground {
+    bottom: 0%;
+    height: 30%;
+  }
+
+  /* Trees */
+  .tree:nth-child(3) {
+    display: none;
+  }
+}
+
+/* ?Laptops (up to 991px) ***************************************************************************************/
+@media only screen and (max-width: 991px) {
+  /* Mountains */
+  .mountain1 {
+    left: -17%;
+  }
+
+  /* Trees */
+  .tree {
+    width: 7.5%;
+    height: 50%;
+  }
+}
+
+/* ?Tablets (up to 767px) ***************************************************************************************/
+@media only screen and (max-width: 767px) {
+  /* Mountains */
+  .mountain1 {
+    left: -25%;
+  }
+
+  .mountain3 {
+    left: -10%;
+  }
+
+  /* Sun / Moon */
+  .sun,
+  .moon {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Trees */
+  .tree {
+    width: 8%;
+    height: 40%;
+  }
+
+  .shadow {
+    width: 25%;
+    height: 120%;
+  }
+}
+
+/* ?Mobile Devices (up to 480px) ********************************************************************************/
+@media only screen and (max-width: 480px) {
+  /* Sun / Moon */
+  .sun,
+  .moon {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Clouds */
+  .cloud {
+    transform: scale(0.5);
+  }
+
+  /* Stars */
+  .star {
+    transform: scale(0.5);
+  }
+
+  /* Mountains */
+  .mountain1 {
+    width: 290px;
+    height: 400px;
+    top: 50%;
+    left: -35%;
+  }
+
+  .mountain2 {
+    width: 150px;
+    height: 400px;
+    top: 55%;
+    left: -5%;
+  }
+
+  .mountain3 {
+    width: 250px;
+    height: 195px;
+    left: -15%;
+    top: 67%;
+  }
+
+  /* Trees */
+  .tree {
+    width: 10%;
+    height: 30%;
+    left: 65%;
+  }
+
+  .tree:nth-child(2) {
+    left: 85%;
+  }
+
+  .shadow {
+    width: 20%;
+    height: 100%;
+  }
+
+  /* Footer */
+  footer {
+    font-size: smaller;
+  }
+}
+
+/* ?Smaller Devices (up to 319px) ************************************************************************************/
+@media only screen and (max-width: 319px) {
+  /* Header */
+  h1 {
+    font-size: medium;
+  }
+
+  /* Mountains */
+  .mountain1 {
+    width: 250px;
+    left: -50%;
+  }
+
+  .mountain2 {
+    left: -15%;
+  }
+
+  .mountain3 {
+    left: -25%;
+  }
+
+  /* Clouds */
+  .cloud {
+    transform: scale(0.5) translateX(-100px);
+  }
+
+  /* Trees */
+  .tree {
+    transform: translate(50px);
+  }
+
+  .tree:nth-child(2) {
+    display: none;
+  }
+
+  /* Footer */
+  footer {
+    font-size: x-small;
+  }
+}

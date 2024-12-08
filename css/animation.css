@@ -1,0 +1,199 @@
+/* CSS Animation Document *****************************************************************************************************************/
+
+/* Day-night cycle animation */
+body {
+  animation: dayNightCycle 10s infinite;
+  transition: background-color 1s ease-in-out;
+}
+
+@keyframes dayNightCycle {
+  0% {
+    background-color: #87ceeb;
+  }
+  25% {
+    background-color: #ffa500;
+  }
+  50% {
+    background-color: #191970;
+  }
+  75% {
+    background-color: #ffa500;
+  }
+  100% {
+    background-color: #87ceeb;
+  }
+}
+
+/* ?DAY ELEMENTS ************************************************/
+/* Sun Rise / Sun Set */
+.sun {
+  animation: sunAnimation 10s ease-in-out infinite;
+  animation-delay: 0.5s; /* Waiting for the sky to change colour */
+}
+
+@keyframes sunAnimation {
+  0% {
+    right: 5%;
+    top: 10%;
+  }
+  /* 3 seconds to set */
+  30% {
+    right: 60%;
+    top: 70%;
+  }
+
+  40% {
+    right: -15%;
+    top: 70%;
+  }
+  /* 3 seconds to rise */
+  70%,
+  100% {
+    right: 5%;
+    top: 10%;
+  }
+}
+
+/* Clouds */
+.cloud {
+  animation: cloudAnimation 10s infinite;
+}
+
+@keyframes cloudAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  25%,
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ?NIGHT ELEMENTS **********************************************/
+/* Moon Rise / Moon Set */
+.moon {
+  animation: moonAnimation 10s ease-in-out infinite;
+  animation-delay: 2s; /* Waiting for the sun to set */
+}
+
+@keyframes moonAnimation {
+  0% {
+    right: -15%;
+    top: 70%;
+  }
+  /* 3 seconds to rise */
+  30%,
+  28% {
+    right: 5%;
+    top: 10%;
+  }
+  /* 3 seconds to set */
+  58% {
+    right: 60%;
+    top: 70%;
+  }
+
+  100% {
+    right: -15%;
+    top: 70%;
+  }
+}
+
+/* Stars */
+.star {
+  animation: starAnimation 10s infinite;
+  animation-delay: 2s; /* Waiting for the clouds to disappear */
+  transition: transform 1s;
+}
+
+@keyframes starAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.star:hover {
+  transform: scale(2) rotate(720deg);
+}
+
+/* ?FEATURES ****************************************************/
+/* Mountains */
+.mountainShadow {
+  animation: mountainShadow 10s infinite;
+  animation-delay: 2.5s; /* Waiting for the sun to set (night-time) */
+}
+
+@keyframes mountainShadow {
+  0% {
+    opacity: 0;
+  }
+
+  30%,
+  35% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Trees */
+.crown {
+  animation: treeColourChange 10s infinite;
+  transition: background-color 1s ease-in-out;
+  animation-delay: 1.5s; /* Waiting for the sun to set (night-time)*/
+}
+
+@keyframes treeColourChange {
+  0% {
+    background-color: #a10514;
+  }
+
+  30%,
+  40% {
+    background-color: #6a040f;
+  }
+
+  100% {
+    background-color: #a10514;
+  }
+}
+
+.shadow {
+  animation: shadowAnimation 10s ease-in-out infinite;
+  animation-delay: 1s; /* Waiting for the sun to set (night-time) */
+}
+
+@keyframes shadowAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  30%,
+  50% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
